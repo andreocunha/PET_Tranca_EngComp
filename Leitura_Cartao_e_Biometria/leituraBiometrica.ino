@@ -14,12 +14,12 @@ int leituraBiometrica() {
   p = finger.fingerFastSearch();
   if (p != FINGERPRINT_OK) {
     digitalWrite(pinoLedVermelho, HIGH);
-/*    oled.clear();
+    oled.clear();
     oled.println("");
     oled.set2X();
-    oled.println("NEGADO!"); */
-    delay(2000); //INTERVALO DE 2 SEGUNDOS
- //   oled.clear();
+    oled.println("NEGADO!"); 
+    delay(1200); //INTERVALO DE 2 SEGUNDOS
+    oled.clear();
     digitalWrite(pinoLedVermelho, LOW);
     return -1;
   }
