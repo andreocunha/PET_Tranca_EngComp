@@ -23,18 +23,18 @@ MFRC522 rfid(SS_PIN, RST_PIN); //PASSAGEM DE PARÂMETROS REFERENTE AOS PINOS
 //-------------------------------------------------------------------------------------------------------------------------
 //bibliotecas e definicoes para o display OLED
 
-/*
+
 #include "SSD1306Ascii.h"
 #include "SSD1306AsciiAvrI2c.h"
 
 // 0X3C+SA0 - 0x3C or 0x3D
 #define I2C_ADDRESS 0x3C
 
-// Define proper RST_PIN if required.
-#define RST_PIN -1
+// Define proper RST_PIN2 if required.
+#define RST_PIN2 -1
 
 SSD1306AsciiAvrI2c oled;
-*/
+
 
 //-------------------------------------------------------------------------------------------------------------------------
 //variaveis
@@ -76,20 +76,18 @@ void setup() {
   //-------------------------------------------------------------------------------------------------------------------------
 //definicoes inciais para o display OLED
 
-  /*
-#if RST_PIN >= 0
-  oled.begin(&Adafruit128x32, I2C_ADDRESS, RST_PIN);
-#else // RST_PIN >= 0
+
+#if RST_PIN2 >= 0
+  oled.begin(&Adafruit128x32, I2C_ADDRESS, RST_PIN2);
+#else // RST_PIN2 >= 0
   oled.begin(&Adafruit128x32, I2C_ADDRESS);
-#endif // RST_PIN >= 0
+#endif // RST_PIN2 >= 0
   // Call oled.setI2cClock(frequency) to change from the default frequency.
 
   oled.setFont(Adafruit5x7);
-
-  uint32_t m = micros();
-
+  
   oled.clear();
-*/
+
 //-------------------------------------------------------------------------------------------------------------------------
 
   
