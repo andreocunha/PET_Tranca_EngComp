@@ -97,6 +97,11 @@ void nomeDoUsuario(int ID){
       oled.println("JM");
      }
 
+     else if(ID == 35 || ID == 36){
+      Serial.println(F("Roberta"));
+      oled.println("Roberta");
+     }
+
       digitalWrite(trancaRele, HIGH);
       delay(250);
       digitalWrite(trancaRele, LOW);
