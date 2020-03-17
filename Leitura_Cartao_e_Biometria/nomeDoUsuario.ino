@@ -87,10 +87,14 @@ void nomeDoUsuario(int ID){
       oled.println("Joana");
      }
 
+/*
+ * Esses IDs estao vazios, podem ser usados para cadastro
+ * 
      else if(ID == 31 || ID == 32){
       Serial.println(F("Quem eh?"));
       oled.println("Quem eh?");
      }
+*/
 
      else if(ID == 33 || ID == 34){
       Serial.println(F("JM"));
@@ -109,7 +113,7 @@ void nomeDoUsuario(int ID){
       oled.clear();
       oled.println("");
       oled.println("Bem vindo!");
-      delay(1500); //INTERVALO DE 2 SEGUNDOS    
+      delay(1000); //INTERVALO DE 2 SEGUNDOS    
       oled.clear();
       digitalWrite(pinoLedVerde, LOW);
 }
